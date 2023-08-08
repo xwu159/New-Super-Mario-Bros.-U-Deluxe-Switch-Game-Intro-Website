@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Super Mario Bros. U Deluxe - Reviews</title>
+    <link rel="stylesheet" href="reviews.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://mario.wiki.gallery/images/thumb/2/21/NSMBUDX_Logo.png/1200px-NSMBUDX_Logo.png" alt="Game Logo" class="logo">
+            <h1>New Super Mario Bros. U Deluxe</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="reviews-section">
+        <h2>Player Reviews</h2>
+        <div class="review-cards" id="review-cards">
+            <!-- Reviews will be dynamically generated here -->
+        </div>
+
+        <h2>Add Your Review</h2>
+        <form id="add-review-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="1">★☆☆☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="4">★★★★☆</option>
+                <option value="5">★★★★★</option>
+            </select>
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <button type="button" id="add-review-btn">Create</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Xinyang Wu All rights reserved.</p>
+    </footer>
+
+    <script src="reviews.js"></script>
+</body>
+</html>
